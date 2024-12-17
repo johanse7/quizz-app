@@ -1,0 +1,253 @@
+{
+  "quizzes": [
+    {
+      "title": "HTML",
+      "icon": "html",
+      "questions": [
+        {
+          "question": "What does HTML stand for?",
+          "options": [
+            "Hyper Trainer Marking Language",
+            "Hyper Text Marketing Language",
+            "Hyper Text Markup Language",
+            "Hyper Text Markup Leveler"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "Which of the following is the correct structure for an HTML document?",
+          "options": [
+            "<html><head></head><body></body></html>",
+            "<head><html></html><body></body></head>",
+            "<body><head></head><html></html></body>",
+            "<html><body></body><head></head></html>"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "question": "Which HTML element is used to define the title of a document?",
+          "options": ["<head>", "<title>", "<header>", "<top>"],
+          "answerIndex": 1
+        },
+        {
+          "question": "What is the purpose of the <body> tag in HTML?",
+          "options": [
+            "It defines the document's head section.",
+            "It contains all the content such as text, images, and links.",
+            "It is used to define the main content of an HTML document.",
+            "It specifies the body of the email content in HTML."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "question": "Which HTML tag is used to create a hyperlink?",
+          "options": ["<hyperlink>", "<link>", "<a>", "<href>"],
+          "answerIndex": 2
+        },
+        {
+          "question": "Which tag is used to display images in HTML?",
+          "options": ["<img>", "<image>", "<src>", "<pic>"],
+          "answerIndex": 0
+        },
+        {
+          "question": "What attribute is used to provide the path of an image in the <img> tag?",
+          "options": ["link", "src", "href", "url"],
+          "answerIndex": 1
+        },
+        {
+          "question": "Which HTML tag is used to create an unordered list?",
+          "options": ["<ul>", "<ol>", "<list>", "<li>"],
+          "answerIndex": 0
+        },
+        {
+          "question": "What does the <br> tag do?",
+          "options": [
+            "It breaks the text into two sections.",
+            "It creates a bold text.",
+            "It inserts a line break.",
+            "It adds a new row in a table."
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "In HTML, what does the `fieldset` tag do?",
+          "options": [
+            "It is used to group related data in a form.",
+            "It sets the field to a fixed size.",
+            "It automatically validates the fields within a form.",
+            "It hides the fields in a form."
+          ],
+          "answerIndex": 0
+        }
+      ]
+    },
+    {
+      "title": "CSS",
+      "icon": "css",
+      "questions": [
+        {
+          "question": "What does CSS stand for?",
+          "options": [
+            "Colorful Style Sheets",
+            "Computer Style Sheets",
+            "Cascading Style Sheets",
+            "Creative Style Sheets"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "Which HTML attribute is used to define inline styles?",
+          "options": ["styles", "style", "class", "font-style"],
+          "answerIndex": 1
+        },
+        {
+          "question": "How do you insert a comment in a CSS file?",
+          "options": [
+            "// this is a comment //",
+            "/* this is a comment */",
+            "-- this is a comment --",
+            "<!-- this is a comment -->"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "question": "Which property is used to change the background color of an element?",
+          "options": ["color", "bgcolor", "background-color", "background"],
+          "answerIndex": 2
+        },
+        {
+          "question": "How do you apply a style to all <p> elements?",
+          "options": ["p { }", ".p { }", "#p { }", "all.p { }"],
+          "answerIndex": 0
+        },
+        {
+          "question": "Which property is used to change the font of an element?",
+          "options": ["font-style", "text-style", "font-family", "typeface"],
+          "answerIndex": 2
+        },
+        {
+          "question": "How do you make each word in a text start with a capital letter?",
+          "options": [
+            "text-transform: capitalize",
+            "text-transform: uppercase",
+            "text-style: capital",
+            "font-transform: capitalize"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "question": "How do you select an element with the class name 'header'?",
+          "options": [".header", "#header", "header", "*header"],
+          "answerIndex": 0
+        },
+        {
+          "question": "What is the default value of the 'position' property?",
+          "options": ["relative", "fixed", "absolute", "static"],
+          "answerIndex": 3
+        },
+        {
+          "question": "What is the purpose of the z-index property in CSS?",
+          "options": [
+            "To count the number of elements",
+            "To set the magnification level of an element",
+            "To specify the stack order of an element",
+            "To create a zoom effect"
+          ],
+          "answerIndex": 2
+        }
+      ]
+    },
+    {
+      "title": "JavaScript",
+      "icon": "javascript",
+      "questions": [
+        {
+          "question": "What is JavaScript primarily used for?",
+          "options": [
+            "Styling web pages",
+            "Structuring web pages",
+            "Making web pages interactive",
+            "Creating databases"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "How do you declare a variable in JavaScript?",
+          "options": ["var", "let", "const", "All of the above"],
+          "answerIndex": 3
+        },
+        {
+          "question": "What is the correct syntax for a JavaScript function?",
+          "options": [
+            "function myFunction() {}",
+            "function: myFunction() {}",
+            "function = myFunction() {}",
+            "function => myFunction() {}"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "question": "What is the output of 'typeof null' in JavaScript?",
+          "options": ["null", "object", "undefined", "string"],
+          "answerIndex": 1
+        },
+        {
+          "question": "What is the purpose of the 'this' keyword in JavaScript?",
+          "options": [
+            "It refers to the current object.",
+            "It creates a new object.",
+            "It binds a function to a variable.",
+            "It creates a new instance of a function."
+          ],
+          "answerIndex": 0
+        }
+      ]
+    },
+    {
+      "title": "Accessibility",
+      "icon": "accessibility",
+      "questions": [
+        {
+          "question": "What is the purpose of web accessibility?",
+          "options": [
+            "To enhance website animations",
+            "To optimize page loading speed",
+            "To make web content usable by everyone, including people with disabilities",
+            "To improve website SEO rankings"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "What does WCAG stand for?",
+          "options": [
+            "Web Content Accessibility Guidelines",
+            "Web Coding and Accessibility Guide",
+            "Wide Community Accessibility Goals",
+            "World Content Accessibility Group"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "question": "Which attribute is used to provide an accessible name for images?",
+          "options": ["alt", "aria-label", "title", "data-label"],
+          "answerIndex": 0
+        },
+        {
+          "question": "What is the purpose of ARIA roles?",
+          "options": [
+            "To define CSS styles for screen readers",
+            "To provide additional information about elements to assistive technologies",
+            "To create animations for buttons",
+            "To manage HTML form submissions"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "question": "Which color contrast ratio is recommended for normal text to meet WCAG AA compliance?",
+          "options": ["2:1", "4.5:1", "7:1", "3:1"],
+          "answerIndex": 1
+        }
+      ]
+    }
+  ]
+}
