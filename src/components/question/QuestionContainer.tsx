@@ -3,6 +3,7 @@
 import { useGetQuizState, useIsClient, useSubmitAnswer } from "@/hooks";
 import { Question } from "@/types";
 import clsx from "clsx";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { GoArrowLeft } from "react-icons/go";
 import { Results } from "../results/results";
@@ -19,6 +20,8 @@ type QuestionContainerProps = {
 export const QuestionContainer = ({ questions }: QuestionContainerProps) => {
   const { currentQuestionIndex = 0, completed = false } = useGetQuizState();
   const { isClient } = useIsClient();
+
+  const t = useTranslations("quiz");
 
   const question = questions[currentQuestionIndex];
   const numberQuestion = currentQuestionIndex + 1;
@@ -75,14 +78,14 @@ export const QuestionContainer = ({ questions }: QuestionContainerProps) => {
             size="xl"
             onClick={handleClickSubmit}
           >
-            Submit Answer
+            {t("submit")}
           </Button>
         )}
         {submitted && answerSelected === null && (
           <div className="flex gap-x-2 items-center fade-in justify-center">
             <Icon type="error" />
             <span className="text-destructive dark:text-white">
-              Please select an answer
+              {t("selectAnswer")}
             </span>
           </div>
         )}

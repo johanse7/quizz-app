@@ -1,5 +1,6 @@
 import { useGetQuizState } from "@/hooks";
 import { useQuizStore } from "@/store";
+import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { QuizInfo } from "../navbar/QuizInfo";
 import { Button } from "../ui/button";
@@ -8,16 +9,16 @@ import { Card, CardContent, CardHeader } from "../ui/card";
 export const Results = () => {
   const { title } = useParams<{ title: string }>();
 
+  const t = useTranslations("result");
   const { answers } = useGetQuizState();
-
   const resetQuiz = useQuizStore((state) => state.resetQuiz);
 
   const scored = answers.filter(Boolean);
   return (
     <div className="fade-in grid sm:grid-cols-2">
       <h1 className="mb-10 text-[40px]">
-        Quiz completed <br />
-        <strong>You scored...</strong>
+        {t("completed")} <br />
+        <strong>{t("score")}...</strong>
       </h1>
 
       <div className="flex flex-col gap-y-3 sm:gap-y-8">
@@ -30,7 +31,7 @@ export const Results = () => {
               {scored.length}
             </span>
             <span className="text-subtitle text-[18px]">
-              out of {answers.length}
+              {t("outOf")} {answers.length}
             </span>
           </CardContent>
         </Card>
@@ -40,7 +41,7 @@ export const Results = () => {
           size="xl"
           onClick={() => resetQuiz(title)}
         >
-          Play Again
+          {t("playAgain")}
         </Button>
       </div>
     </div>

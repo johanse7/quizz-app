@@ -4,17 +4,23 @@ import { redirect } from "next/navigation";
 
 type QuizPage = {
   params: Promise<{
-    title: string;
+    id: number;
   }>;
 };
 
 async function QuizPage({ params }: QuizPage) {
-  const { title } = await params;
-  const questions = await getQuestionByQuiz(title);
+  const { id } = await params;
+
+  if (Number.isNaN(id)) {
+    redirect("/");
+  }
+  const questions = await getQuestionByQuiz(Number(id));
 
   if (!questions?.length) {
     redirect("/");
   }
+
+ 
   return (
     <>
       <QuestionContainer questions={questions} />

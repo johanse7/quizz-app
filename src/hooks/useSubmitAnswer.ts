@@ -1,5 +1,6 @@
 import { useQuizStore } from "@/store";
 import { useParams } from "next/navigation";
+import confetti from 'canvas-confetti'
 
 export const useSubmitAnswer = (
   correctAnswerIndex: number,
@@ -21,6 +22,9 @@ export const useSubmitAnswer = (
     if (answerSelected === null) return;
 
     const isCorrectAnswer = answerSelected === correctAnswerIndex;
+
+    if(isCorrectAnswer) confetti();
+
     saveAnswer(isCorrectAnswer, title);
   };
 

@@ -1,0 +1,21 @@
+{
+  "home": {
+    "greeting": "Welcome to the ",
+    "pickSubject": "Pick a subject to get started."
+  },
+  "quiz": {
+    "questions": "Questions",
+    "submit": "Submit answer",
+    "selectAnswer": "Please select an answer"
+  },
+  "result": {
+    "completed": "Quiz completed",
+    "score": "Your score",
+    "playAgain": "Play again",
+    "outOf": "out of"
+  },
+  "language": {
+    "en": "English",
+    "es": "Spanish"
+  }
+}

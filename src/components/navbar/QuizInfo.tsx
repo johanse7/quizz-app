@@ -1,6 +1,6 @@
 "use client";
 
-import { getQuizByName } from "@/actions";
+import { getQuizById } from "@/actions";
 import { Quiz } from "@/types";
 import { useParams } from "next/navigation";
 import { useEffect, useState, useTransition } from "react";
@@ -9,19 +9,19 @@ import { Icon, type IconName } from "../ui/Icon";
 export const QuizInfo = () => {
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [isPending, startTransition] = useTransition();
-  const params = useParams<{ title: string }>();
-
+  const params = useParams<{ id: string }>();
+  
   useEffect(() => {
     startTransition(async () => {
-      if (!params.title) {
+      if (!params.id) {
         setQuiz(null);
         return;
       }
 
-      const quizResult = await getQuizByName(params.title);
+      const quizResult = await getQuizById(params.id);
       setQuiz(quizResult);
     });
-  }, [params.title]);
+  }, [params.id]);
 
   if (isPending) return <p className="text-lg">Loading</p>;
 

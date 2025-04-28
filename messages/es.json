@@ -1,0 +1,21 @@
+{
+  "home": {
+    "greeting": "Bienvenido a",
+    "pickSubject": "Selecciona un tema para empezar"
+  },
+  "quiz": {
+    "questions": "Preguntas",
+    "submit": "Enviar",
+    "selectAnswer": "Selecciona una respuesta"
+  },
+  "result": {
+    "completed": "Quiz completado",
+    "score": "Tu puntaje",
+    "playAgain": "Jugar de nuevo",
+    "outOf": "de"
+  },
+  "language": {
+    "en": "Ingles",
+    "es": "Español"
+  }
+}

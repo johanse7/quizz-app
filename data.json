@@ -1,250 +1,521 @@
 {
   "quizzes": [
     {
-      "title": "HTML",
+      "id": 1,
+      "title": {
+        "en": "HTML",
+        "es": "HTML"
+      },
       "icon": "html",
       "questions": [
         {
-          "question": "What does HTML stand for?",
-          "options": [
-            "Hyper Trainer Marking Language",
-            "Hyper Text Marketing Language",
-            "Hyper Text Markup Language",
-            "Hyper Text Markup Leveler"
-          ],
+          "question": {
+            "en": "What does HTML stand for?",
+            "es": "¿Qué significa HTML?"
+          },
+          "options": {
+            "en": [
+              "Hyper Trainer Marking Language",
+              "Hyper Text Marketing Language",
+              "Hyper Text Markup Language",
+              "Hyper Text Markup Leveler"
+            ],
+            "es": [
+              "Lenguaje de Marcado de Hiperentrenador",
+              "Lenguaje de Mercadeo de Hipertexto",
+              "Lenguaje de Marcado de Hipertexto",
+              "Nivelador de Marcado de Hipertexto"
+            ]
+          },
           "answerIndex": 2
         },
         {
-          "question": "Which of the following is the correct structure for an HTML document?",
-          "options": [
-            "<html><head></head><body></body></html>",
-            "<head><html></html><body></body></head>",
-            "<body><head></head><html></html></body>",
-            "<html><body></body><head></head></html>"
-          ],
+          "question": {
+            "en": "Which of the following is the correct structure for an HTML document?",
+            "es": "¿Cuál de las siguientes es la estructura correcta para un documento HTML?"
+          },
+          "options": {
+            "en": [
+              "<html><head></head><body></body></html>",
+              "<head><html></html><body></body></head>",
+              "<body><head></head><html></html></body>",
+              "<html><body></body><head></head></html>"
+            ],
+            "es": [
+              "<html><head></head><body></body></html>",
+              "<head><html></html><body></body></head>",
+              "<body><head></head><html></html></body>",
+              "<html><body></body><head></head></html>"
+            ]
+          },
           "answerIndex": 0
         },
         {
-          "question": "Which HTML element is used to define the title of a document?",
-          "options": ["<head>", "<title>", "<header>", "<top>"],
+          "question": {
+            "en": "Which HTML element is used to define the title of a document?",
+            "es": "¿Qué elemento HTML se utiliza para definir el título de un documento?"
+          },
+          "options": {
+            "en": ["<head>", "<title>", "<header>", "<top>"],
+            "es": ["<head>", "<title>", "<header>", "<top>"]
+          },
           "answerIndex": 1
         },
         {
-          "question": "What is the purpose of the <body> tag in HTML?",
-          "options": [
-            "It defines the document's head section.",
-            "It contains all the content such as text, images, and links.",
-            "It is used to define the main content of an HTML document.",
-            "It specifies the body of the email content in HTML."
-          ],
+          "question": {
+            "en": "What is the purpose of the <body> tag in HTML?",
+            "es": "¿Cuál es el propósito de la etiqueta <body> en HTML?"
+          },
+          "options": {
+            "en": [
+              "It defines the document's head section.",
+              "It contains all the content such as text, images, and links.",
+              "It is used to define the main content of an HTML document.",
+              "It specifies the body of the email content in HTML."
+            ],
+            "es": [
+              "Define la sección de encabezado del documento.",
+              "Contiene todo el contenido como texto, imágenes y enlaces.",
+              "Se utiliza para definir el contenido principal de un documento HTML.",
+              "Especifica el cuerpo del contenido de un correo electrónico en HTML."
+            ]
+          },
           "answerIndex": 1
         },
         {
-          "question": "Which HTML tag is used to create a hyperlink?",
-          "options": ["<hyperlink>", "<link>", "<a>", "<href>"],
+          "question": {
+            "en": "Which HTML tag is used to create a hyperlink?",
+            "es": "¿Qué etiqueta HTML se utiliza para crear un hipervínculo?"
+          },
+          "options": {
+            "en": ["<hyperlink>", "<link>", "<a>", "<href>"],
+            "es": ["<hyperlink>", "<link>", "<a>", "<href>"]
+          },
           "answerIndex": 2
         },
         {
-          "question": "Which tag is used to display images in HTML?",
-          "options": ["<img>", "<image>", "<src>", "<pic>"],
+          "question": {
+            "en": "Which tag is used to display images in HTML?",
+            "es": "¿Qué etiqueta se utiliza para mostrar imágenes en HTML?"
+          },
+          "options": {
+            "en": ["<img>", "<image>", "<src>", "<pic>"],
+            "es": ["<img>", "<image>", "<src>", "<pic>"]
+          },
           "answerIndex": 0
         },
         {
-          "question": "What attribute is used to provide the path of an image in the <img> tag?",
-          "options": ["link", "src", "href", "url"],
+          "question": {
+            "en": "What attribute is used to provide the path of an image in the <img> tag?",
+            "es": "¿Qué atributo se utiliza para proporcionar la ruta de una imagen en la etiqueta <img>?"
+          },
+          "options": {
+            "en": ["link", "src", "href", "url"],
+            "es": ["link", "src", "href", "url"]
+          },
           "answerIndex": 1
         },
         {
-          "question": "Which HTML tag is used to create an unordered list?",
-          "options": ["<ul>", "<ol>", "<list>", "<li>"],
+          "question": {
+            "en": "Which HTML tag is used to create an unordered list?",
+            "es": "¿Qué etiqueta HTML se utiliza para crear una lista desordenada?"
+          },
+          "options": {
+            "en": ["<ul>", "<ol>", "<list>", "<li>"],
+            "es": ["<ul>", "<ol>", "<list>", "<li>"]
+          },
           "answerIndex": 0
         },
         {
-          "question": "What does the <br> tag do?",
-          "options": [
-            "It breaks the text into two sections.",
-            "It creates a bold text.",
-            "It inserts a line break.",
-            "It adds a new row in a table."
-          ],
+          "question": {
+            "en": "What does the <br> tag do?",
+            "es": "¿Qué hace la etiqueta <br>?"
+          },
+          "options": {
+            "en": [
+              "It breaks the text into two sections.",
+              "It creates a bold text.",
+              "It inserts a line break.",
+              "It adds a new row in a table."
+            ],
+            "es": [
+              "Divide el texto en dos secciones.",
+              "Crea un texto en negrita.",
+              "Inserta un salto de línea.",
+              "Añade una nueva fila en una tabla."
+            ]
+          },
           "answerIndex": 2
         },
         {
-          "question": "In HTML, what does the `fieldset` tag do?",
-          "options": [
-            "It is used to group related data in a form.",
-            "It sets the field to a fixed size.",
-            "It automatically validates the fields within a form.",
-            "It hides the fields in a form."
-          ],
+          "question": {
+            "en": "In HTML, what does the `fieldset` tag do?",
+            "es": "En HTML, ¿qué hace la etiqueta `fieldset`?"
+          },
+          "options": {
+            "en": [
+              "It is used to group related data in a form.",
+              "It sets the field to a fixed size.",
+              "It automatically validates the fields within a form.",
+              "It hides the fields in a form."
+            ],
+            "es": [
+              "Se utiliza para agrupar datos relacionados en un formulario.",
+              "Establece el campo a un tamaño fijo.",
+              "Valida automáticamente los campos dentro de un formulario.",
+              "Oculta los campos en un formulario."
+            ]
+          },
           "answerIndex": 0
         }
       ]
     },
     {
-      "title": "CSS",
+      "id": 2,
+      "title": {
+        "en": "CSS",
+        "es": "CSS"
+      },
       "icon": "css",
       "questions": [
         {
-          "question": "What does CSS stand for?",
-          "options": [
-            "Colorful Style Sheets",
-            "Computer Style Sheets",
-            "Cascading Style Sheets",
-            "Creative Style Sheets"
-          ],
+          "question": {
+            "en": "What does CSS stand for?",
+            "es": "¿Qué significa CSS?"
+          },
+          "options": {
+            "en": [
+              "Colorful Style Sheets",
+              "Computer Style Sheets",
+              "Cascading Style Sheets",
+              "Creative Style Sheets"
+            ],
+            "es": [
+              "Hojas de Estilo Coloridas",
+              "Hojas de Estilo de Computadora",
+              "Hojas de Estilo en Cascada",
+              "Hojas de Estilo Creativas"
+            ]
+          },
           "answerIndex": 2
         },
         {
-          "question": "Which HTML attribute is used to define inline styles?",
-          "options": ["styles", "style", "class", "font-style"],
+          "question": {
+            "en": "Which HTML attribute is used to define inline styles?",
+            "es": "¿Qué atributo HTML se utiliza para definir estilos en línea?"
+          },
+          "options": {
+            "en": ["styles", "style", "class", "font-style"],
+            "es": ["styles", "style", "class", "font-style"]
+          },
           "answerIndex": 1
         },
         {
-          "question": "How do you insert a comment in a CSS file?",
-          "options": [
-            "// this is a comment //",
-            "/* this is a comment */",
-            "-- this is a comment --",
-            "<!-- this is a comment -->"
-          ],
+          "question": {
+            "en": "How do you insert a comment in a CSS file?",
+            "es": "¿Cómo se inserta un comentario en un archivo CSS?"
+          },
+          "options": {
+            "en": [
+              "// this is a comment //",
+              "/* this is a comment */",
+              "-- this is a comment --",
+              "<!-- this is a comment -->"
+            ],
+            "es": [
+              "// esto es un comentario //",
+              "/* esto es un comentario */",
+              "-- esto es un comentario --",
+              "<!-- esto es un comentario -->"
+            ]
+          },
           "answerIndex": 1
         },
         {
-          "question": "Which property is used to change the background color of an element?",
-          "options": ["color", "bgcolor", "background-color", "background"],
+          "question": {
+            "en": "Which property is used to change the background color of an element?",
+            "es": "¿Qué propiedad se utiliza para cambiar el color de fondo de un elemento?"
+          },
+          "options": {
+            "en": ["color", "bgcolor", "background-color", "background"],
+            "es": ["color", "bgcolor", "background-color", "background"]
+          },
           "answerIndex": 2
         },
         {
-          "question": "How do you apply a style to all <p> elements?",
-          "options": ["p { }", ".p { }", "#p { }", "all.p { }"],
+          "question": {
+            "en": "How do you apply a style to all <p> elements?",
+            "es": "¿Cómo se aplica un estilo a todos los elementos <p>?"
+          },
+          "options": {
+            "en": ["p { }", ".p { }", "#p { }", "all.p { }"],
+            "es": ["p { }", ".p { }", "#p { }", "all.p { }"]
+          },
           "answerIndex": 0
         },
         {
-          "question": "Which property is used to change the font of an element?",
-          "options": ["font-style", "text-style", "font-family", "typeface"],
+          "question": {
+            "en": "Which property is used to change the font of an element?",
+            "es": "¿Qué propiedad se utiliza para cambiar la fuente de un elemento?"
+          },
+          "options": {
+            "en": ["font-style", "text-style", "font-family", "typeface"],
+            "es": ["font-style", "text-style", "font-family", "typeface"]
+          },
           "answerIndex": 2
         },
         {
-          "question": "How do you make each word in a text start with a capital letter?",
-          "options": [
-            "text-transform: capitalize",
-            "text-transform: uppercase",
-            "text-style: capital",
-            "font-transform: capitalize"
-          ],
+          "question": {
+            "en": "How do you make each word in a text start with a capital letter?",
+            "es": "¿Cómo se hace que cada palabra en un texto comience con una letra mayúscula?"
+          },
+          "options": {
+            "en": [
+              "text-transform: capitalize",
+              "text-transform: uppercase",
+              "text-style: capital",
+              "font-transform: capitalize"
+            ],
+            "es": [
+              "text-transform: capitalize",
+              "text-transform: uppercase",
+              "text-style: capital",
+              "font-transform: capitalize"
+            ]
+          },
           "answerIndex": 0
         },
         {
-          "question": "How do you select an element with the class name 'header'?",
-          "options": [".header", "#header", "header", "*header"],
+          "question": {
+            "en": "How do you select an element with the class name 'header'?",
+            "es": "¿Cómo se selecciona un elemento con el nombre de clase 'header'?"
+          },
+          "options": {
+            "en": [".header", "#header", "header", "*header"],
+            "es": [".header", "#header", "header", "*header"]
+          },
           "answerIndex": 0
         },
         {
-          "question": "What is the default value of the 'position' property?",
-          "options": ["relative", "fixed", "absolute", "static"],
+          "question": {
+            "en": "What is the default value of the 'position' property?",
+            "es": "¿Cuál es el valor predeterminado de la propiedad 'position'?"
+          },
+          "options": {
+            "en": ["relative", "fixed", "absolute", "static"],
+            "es": ["relative", "fixed", "absolute", "static"]
+          },
           "answerIndex": 3
         },
         {
-          "question": "What is the purpose of the z-index property in CSS?",
-          "options": [
-            "To count the number of elements",
-            "To set the magnification level of an element",
-            "To specify the stack order of an element",
-            "To create a zoom effect"
-          ],
+          "question": {
+            "en": "What is the purpose of the z-index property in CSS?",
+            "es": "¿Cuál es el propósito de la propiedad z-index en CSS?"
+          },
+          "options": {
+            "en": [
+              "To count the number of elements",
+              "To set the magnification level of an element",
+              "To specify the stack order of an element",
+              "To create a zoom effect"
+            ],
+            "es": [
+              "Contar el número de elementos",
+              "Establecer el nivel de ampliación de un elemento",
+              "Especificar el orden de apilamiento de un elemento",
+              "Crear un efecto de zoom"
+            ]
+          },
           "answerIndex": 2
         }
       ]
     },
     {
-      "title": "JavaScript",
+      "id": 3,
+      "title": {
+        "en": "JavaScript",
+        "es": "JavaScript"
+      },
       "icon": "javascript",
       "questions": [
         {
-          "question": "What is JavaScript primarily used for?",
-          "options": [
-            "Styling web pages",
-            "Structuring web pages",
-            "Making web pages interactive",
-            "Creating databases"
-          ],
+          "question": {
+            "en": "What is JavaScript primarily used for?",
+            "es": "¿Para qué se utiliza principalmente JavaScript?"
+          },
+          "options": {
+            "en": [
+              "Styling web pages",
+              "Structuring web pages",
+              "Making web pages interactive",
+              "Creating databases"
+            ],
+            "es": [
+              "Estilizar páginas web",
+              "Estructurar páginas web",
+              "Hacer que las páginas web sean interactivas",
+              "Crear bases de datos"
+            ]
+          },
           "answerIndex": 2
         },
         {
-          "question": "How do you declare a variable in JavaScript?",
-          "options": ["var", "let", "const", "All of the above"],
+          "question": {
+            "en": "How do you declare a variable in JavaScript?",
+            "es": "¿Cómo se declara una variable en JavaScript?"
+          },
+          "options": {
+            "en": ["var", "let", "const", "All of the above"],
+            "es": ["var", "let", "const", "Todas las anteriores"]
+          },
           "answerIndex": 3
         },
         {
-          "question": "What is the correct syntax for a JavaScript function?",
-          "options": [
-            "function myFunction() {}",
-            "function: myFunction() {}",
-            "function = myFunction() {}",
-            "function => myFunction() {}"
-          ],
+          "question": {
+            "en": "What is the correct syntax for a JavaScript function?",
+            "es": "¿Cuál es la sintaxis correcta para una función en JavaScript?"
+          },
+          "options": {
+            "en": [
+              "function myFunction() {}",
+              "function: myFunction() {}",
+              "function = myFunction() {}",
+              "function => myFunction() {}"
+            ],
+            "es": [
+              "function myFunction() {}",
+              "function: myFunction() {}",
+              "function = myFunction() {}",
+              "function => myFunction() {}"
+            ]
+          },
           "answerIndex": 0
         },
         {
-          "question": "What is the output of 'typeof null' in JavaScript?",
-          "options": ["null", "object", "undefined", "string"],
+          "question": {
+            "en": "What is the output of 'typeof null' in JavaScript?",
+            "es": "¿Cuál es la salida de 'typeof null' en JavaScript?"
+          },
+          "options": {
+            "en": ["null", "object", "undefined", "string"],
+            "es": ["null", "object", "undefined", "string"]
+          },
           "answerIndex": 1
         },
         {
-          "question": "What is the purpose of the 'this' keyword in JavaScript?",
-          "options": [
-            "It refers to the current object.",
-            "It creates a new object.",
-            "It binds a function to a variable.",
-            "It creates a new instance of a function."
-          ],
+          "question": {
+            "en": "What is the purpose of the 'this' keyword in JavaScript?",
+            "es": "¿Cuál es el propósito de la palabra clave 'this' en JavaScript?"
+          },
+          "options": {
+            "en": [
+              "It refers to the current object.",
+              "It creates a new object.",
+              "It binds a function to a variable.",
+              "It creates a new instance of a function."
+            ],
+            "es": [
+              "Se refiere al objeto actual.",
+              "Crea un nuevo objeto.",
+              "Vincula una función a una variable.",
+              "Crea una nueva instancia de una función."
+            ]
+          },
           "answerIndex": 0
         }
       ]
     },
     {
-      "title": "Accessibility",
+      "id": 4,
+      "title": {
+        "en": "Accessibility",
+        "es": "Accesibilidad"
+      },
       "icon": "accessibility",
       "questions": [
         {
-          "question": "What is the purpose of web accessibility?",
-          "options": [
-            "To enhance website animations",
-            "To optimize page loading speed",
-            "To make web content usable by everyone, including people with disabilities",
-            "To improve website SEO rankings"
-          ],
+          "question": {
+            "en": "What is the purpose of web accessibility?",
+            "es": "¿Cuál es el propósito de la accesibilidad web?"
+          },
+          "options": {
+            "en": [
+              "To enhance website animations",
+              "To optimize page loading speed",
+              "To make web content usable by everyone, including people with disabilities",
+              "To improve website SEO rankings"
+            ],
+            "es": [
+              "Mejorar las animaciones del sitio web",
+              "Optimizar la velocidad de carga de la página",
+              "Hacer que el contenido web sea utilizable por todos, incluidas las personas con discapacidades",
+              "Mejorar el posicionamiento SEO del sitio web"
+            ]
+          },
           "answerIndex": 2
         },
         {
-          "question": "What does WCAG stand for?",
-          "options": [
-            "Web Content Accessibility Guidelines",
-            "Web Coding and Accessibility Guide",
-            "Wide Community Accessibility Goals",
-            "World Content Accessibility Group"
-          ],
+          "question": {
+            "en": "What does WCAG stand for?",
+            "es": "¿Qué significa WCAG?"
+          },
+          "options": {
+            "en": [
+              "Web Content Accessibility Guidelines",
+              "Web Coding and Accessibility Guide",
+              "Wide Community Accessibility Goals",
+              "World Content Accessibility Group"
+            ],
+            "es": [
+              "Pautas de Accesibilidad para el Contenido Web",
+              "Guía de Codificación y Accesibilidad Web",
+              "Objetivos de Accesibilidad de la Comunidad Amplia",
+              "Grupo de Accesibilidad de Contenido Mundial"
+            ]
+          },
           "answerIndex": 0
         },
         {
-          "question": "Which attribute is used to provide an accessible name for images?",
-          "options": ["alt", "aria-label", "title", "data-label"],
+          "question": {
+            "en": "Which attribute is used to provide an accessible name for images?",
+            "es": "¿Qué atributo se utiliza para proporcionar un nombre accesible para las imágenes?"
+          },
+          "options": {
+            "en": ["alt", "aria-label", "title", "data-label"],
+            "es": ["alt", "aria-label", "title", "data-label"]
+          },
           "answerIndex": 0
         },
         {
-          "question": "What is the purpose of ARIA roles?",
-          "options": [
-            "To define CSS styles for screen readers",
-            "To provide additional information about elements to assistive technologies",
-            "To create animations for buttons",
-            "To manage HTML form submissions"
-          ],
+          "question": {
+            "en": "What is the purpose of ARIA roles?",
+            "es": "¿Cuál es el propósito de los roles ARIA?"
+          },
+          "options": {
+            "en": [
+              "To define CSS styles for screen readers",
+              "To provide additional information about elements to assistive technologies",
+              "To create animations for buttons",
+              "To manage HTML form submissions"
+            ],
+            "es": [
+              "Definir estilos CSS para lectores de pantalla",
+              "Proporcionar información adicional sobre elementos a tecnologías de asistencia",
+              "Crear animaciones para botones",
+              "Gestionar envíos de formularios HTML"
+            ]
+          },
           "answerIndex": 1
         },
         {
-          "question": "Which color contrast ratio is recommended for normal text to meet WCAG AA compliance?",
-          "options": ["2:1", "4.5:1", "7:1", "3:1"],
+          "question": {
+            "en": "Which color contrast ratio is recommended for normal text to meet WCAG AA compliance?",
+            "es": "¿Qué relación de contraste de color se recomienda para el texto normal para cumplir con la conformidad WCAG AA?"
+          },
+          "options": {
+            "en": ["2:1", "4.5:1", "7:1", "3:1"],
+            "es": ["2:1", "4.5:1", "7:1", "3:1"]
+          },
           "answerIndex": 1
         }
       ]
