@@ -16,7 +16,7 @@ import {
 } from "react-share";
 import { Button } from "../ui/button";
 
-const shareLink = process.env.NEXT_PUBLIC_WEBSITE_URL;
+const shareLink = process.env.NEXT_PUBLIC_WEBSITE_URL ?? "";
 
 export const ShareButton = () => {
   return (
