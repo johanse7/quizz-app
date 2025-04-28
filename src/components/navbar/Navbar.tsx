@@ -5,8 +5,8 @@ import { ShareButton } from "./ShareButton";
 
 export const Navbar = () => {
   return (
-    <nav className="py-10 lg:py-16">
-      <div className="flex justify-between items-center">
+    <nav className="py-10 lg:py-16 ">
+      <div className="flex justify-between items-center flex-wrap-reverse gap-y-6">
         <QuizInfo />
         <div className="flex gap-2 ml-auto">
           <ShareButton />
