@@ -7,7 +7,7 @@ import { Button } from "../ui/button";
 import { Card, CardContent, CardHeader } from "../ui/card";
 
 export const Results = () => {
-  const { title } = useParams<{ title: string }>();
+  const { id } = useParams<{ id: string }>();
 
   const t = useTranslations("result");
   const { answers } = useGetQuizState();
@@ -39,7 +39,7 @@ export const Results = () => {
         <Button
           className=" w-full text-white"
           size="xl"
-          onClick={() => resetQuiz(title)}
+          onClick={() => resetQuiz(id)}
         >
           {t("playAgain")}
         </Button>

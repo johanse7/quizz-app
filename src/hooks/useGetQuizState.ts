@@ -9,8 +9,8 @@ const INITIAL_QUIZ_STATE = {
   submitted: false,
 };
 export const useGetQuizState = () => {
-  const { title } = useParams<{ title: string }>();
+  const { id } = useParams<{ id: string }>();
   const quizState = useQuizStore((state) => state.quizzes);
-  const state = quizState[title] ?? INITIAL_QUIZ_STATE;
+  const state = quizState[id] ?? INITIAL_QUIZ_STATE;
   return state;
 };

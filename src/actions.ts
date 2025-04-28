@@ -31,21 +31,31 @@ export const getQuestionByQuiz = async (
   const data = result ? JSON.parse(result) : [];
   const quiz: QuizData & { questions: Array<QuestionData> } =
     data?.quizzes?.find((quiz: QuizData) => quiz.id === id);
+  const quizzesMapped = quiz?.questions.map((quiz) => {
+    return {
+      ...quiz,
+      question: quiz.question[locale as keyof typeof quiz.question],
+      options: quiz.options[locale as keyof typeof quiz.options],
+    };
+  });
 
-  console.log({ quiz, data: data.quizzes });
-  return quiz?.questions.map((quiz) => ({
-    ...quiz,
-    question: quiz.question[locale as keyof typeof quiz.question],
-    options: quiz.options[locale as keyof typeof quiz.options],
-  }));
+  return quizzesMapped;
 };
 
 export const getQuizById = async (id: number) => {
+  const locale = await getLocale();
+
   const result = await readFile(path.resolve("data.json"), {
     encoding: "utf8",
   });
 
   const data = result ? JSON.parse(result) : [];
-  const quiz: Quiz = data?.quizzes?.find((quiz: QuizData) => quiz.id === id);
-  return quiz;
+  const quiz: QuizData = data?.quizzes?.find(
+    (quiz: QuizData) => quiz.id === id
+  );
+  console.log({ quiz });
+  return {
+    ...quiz,
+    title: quiz.title[locale as keyof typeof quiz.title],
+  };
 };

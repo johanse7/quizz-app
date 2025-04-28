@@ -1,49 +1,49 @@
 import { useQuizStore } from "@/store";
+import confetti from "canvas-confetti";
 import { useParams } from "next/navigation";
-import confetti from 'canvas-confetti'
 
 export const useSubmitAnswer = (
   correctAnswerIndex: number,
   totalQuestions: number
 ) => {
-  const { title } = useParams<{ title: string }>();
+  const { id } = useParams<{ id: string }>();
 
   const goNextQuestion = useQuizStore((state) => state.goNextQuestion);
   const updateShowResults = useQuizStore((state) => state.updateShowResults);
   const saveAnswer = useQuizStore((state) => state.saveAnswer);
   const quizState = useQuizStore((state) => state.quizzes);
 
-  const { answerSelected = null, submitted = false } = quizState[title] ?? {};
+  const { answerSelected = null, submitted = false } = quizState[id] ?? {};
   const setSubmitted = useQuizStore((state) => state.setSubmitted);
   const setAnswerSelected = useQuizStore((state) => state.setAnswerSelected);
 
   const handleClickSubmit = () => {
-    setSubmitted(title, true);
+    setSubmitted(id, true);
     if (answerSelected === null) return;
 
     const isCorrectAnswer = answerSelected === correctAnswerIndex;
 
-    if(isCorrectAnswer) confetti();
+    if (isCorrectAnswer) confetti();
 
-    saveAnswer(isCorrectAnswer, title);
+    saveAnswer(isCorrectAnswer, id);
   };
 
   const handleNextQuestions = (currentQuestionIndex: number) => () => {
     const isLastQuestion = currentQuestionIndex === totalQuestions - 1;
 
-    setSubmitted(title, false);
-    setAnswerSelected(title, null);
+    setSubmitted(id, false);
+    setAnswerSelected(id, null);
     if (isLastQuestion) {
-      updateShowResults(title);
+      updateShowResults(id);
       return;
     }
 
-    goNextQuestion(title);
+    goNextQuestion(id);
   };
 
   const handleChangeAnswer = (index: number) => {
-    setSubmitted(title, false);
-    setAnswerSelected(title, index);
+    setSubmitted(id, false);
+    setAnswerSelected(id, index);
   };
 
   return {

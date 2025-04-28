@@ -19,7 +19,6 @@ type Actions = {
   resetQuiz: (currentQuiz: string) => void;
   setSubmitted: (currentQuiz: string, value: boolean) => void;
   setAnswerSelected: (currentQuiz: string, answerIndex: number | null) => void;
-
 };
 
 export const useQuizStore = create<State & Actions>()(
@@ -27,6 +26,7 @@ export const useQuizStore = create<State & Actions>()(
     (set, get) => ({
       quizzes: {},
       goNextQuestion: (currentQuiz: string) => {
+        debugger;
         const { quizzes } = get();
 
         const newQuizzes = structuredClone(quizzes);
@@ -69,8 +69,6 @@ export const useQuizStore = create<State & Actions>()(
         set({ quizzes: newQuizzes });
       },
 
-
-
       resetQuiz: (currentQuiz: string) => {
         const { quizzes } = get();
 
@@ -105,7 +103,6 @@ export const useQuizStore = create<State & Actions>()(
 
         set({ quizzes: newQuizzes });
       },
-
     }),
     { name: "quizzes-store" }
   )
