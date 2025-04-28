@@ -37,29 +37,32 @@ export const LanguageMenu = () => {
   };
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size={"icon"}>
-          <GrLanguage className="w-6 h-6" />
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent
-        className={clsx("w-52", {
-          ["transition-opacity [&:disabled]:opacity-30"]: isPending,
-        })}
-        align="start"
-        sideOffset={10}
-      >
-        {routing.locales.map((routingLocale) => (
-          <DropdownMenuCheckboxItem
-            key={routingLocale}
-            checked={locale === routingLocale}
-            onClick={handleChangeLanguage(routingLocale)}
-          >
-            {t(routingLocale)}
-          </DropdownMenuCheckboxItem>
-        ))}
-      </DropdownMenuContent>
-    </DropdownMenu>
+    <div className="flex gap-[2px] items-center">
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button variant="ghost" size={"icon"}>
+            <GrLanguage className="w-6 h-6" />
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent
+          className={clsx("w-52", {
+            ["transition-opacity [&:disabled]:opacity-30"]: isPending,
+          })}
+          align="start"
+          sideOffset={10}
+        >
+          {routing.locales.map((routingLocale) => (
+            <DropdownMenuCheckboxItem
+              key={routingLocale}
+              checked={locale === routingLocale}
+              onClick={handleChangeLanguage(routingLocale)}
+            >
+              {t(routingLocale)}
+            </DropdownMenuCheckboxItem>
+          ))}
+        </DropdownMenuContent>
+      </DropdownMenu>
+      <span className="text-sm">{locale}</span>
+    </div>
   );
 };
