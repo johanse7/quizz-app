@@ -10,7 +10,7 @@ export const QuizInfo = () => {
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [isPending, startTransition] = useTransition();
   const params = useParams<{ id: string }>();
-  
+
   useEffect(() => {
     startTransition(async () => {
       if (!params.id) {
@@ -18,7 +18,7 @@ export const QuizInfo = () => {
         return;
       }
 
-      const quizResult = await getQuizById(params.id);
+      const quizResult = await getQuizById(Number(params.id));
       setQuiz(quizResult);
     });
   }, [params.id]);
