@@ -13,25 +13,35 @@ export type IconName =
   | "javascript"
   | "accessibility"
   | "correct"
-  | "error";
+  | "error"
+  | "old-testament"
+  | "jesus"
+  | "bible-verses";
 
 type IconProps = {
   type: IconName;
 } & SVGProps<SVGSVGElement>;
 
-const iconMap = new Map<IconName, FunctionComponent<SVGProps<SVGSVGElement>>>([
+type IconContentType = string | FunctionComponent<SVGProps<SVGSVGElement>>;
+
+const iconMap = new Map<IconName, IconContentType>([
   ["html", HtmlIcon],
   ["css", CssIcon],
   ["javascript", JavascriptIcon],
   ["accessibility", AccessibilityIcon],
   ["error", Error],
   ["correct", Correct],
+  ["old-testament", "📜"],
+  ["jesus", "✝️"],
+  ["bible-verses", "📖"],
 ]);
 
 export const Icon = ({ type, ...rest }: IconProps) => {
   const IconComponent = iconMap.get(type);
 
   if (!IconComponent) return null;
+
+  if (typeof IconComponent === "string") return IconComponent;
 
   return <IconComponent {...rest} />;
 };

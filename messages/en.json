@@ -1,7 +1,8 @@
 {
   "home": {
     "greeting": "Welcome to the ",
-    "pickSubject": "Pick a subject to get started."
+    "pickSubject": "Pick a subject to get started.",
+    "quizName": "Bible"
   },
   "quiz": {
     "questions": "Questions",

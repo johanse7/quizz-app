@@ -1,7 +1,8 @@
 {
   "home": {
     "greeting": "Bienvenido a",
-    "pickSubject": "Selecciona un tema para empezar"
+    "pickSubject": "Selecciona un tema para empezar",
+    "quizName": "Biblia"
   },
   "quiz": {
     "questions": "Preguntas",

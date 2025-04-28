@@ -13,7 +13,7 @@ export default async function Home() {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-10">
       <div className="flex flex-col gap-y-4 lg:gap-y-12">
         <h1 className="text-[40px] lg:text-6xl text-balance leading-[1.2]">
-          {t("greeting")} <br /> <strong>Frontend Quiz!</strong>
+          {t("greeting")} <br /> <strong>{t("quizName")} quiz!</strong>
         </h1>
         <p className="text-subtitle">{t("pickSubject")}</p>
       </div>
